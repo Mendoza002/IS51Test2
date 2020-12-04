@@ -8,3 +8,23 @@ then we use the sum of all grades and divided it with the total numbers of grade
 then finally we use the equations to figure out the percentage of grades that are above the average.
 and print out the results of each of the three functions.
 """
+
+"""
+main():
+    set final_scores = extractfile()
+    set scores = evaluate numbers in final_scores()
+    displayNumofgrades(score)
+extractFile():
+    read in Final.txt
+    create list for each equation = each line from file
+    close the file
+displayNumofgrades(lisofScores)
+    grades = length(listofScores)
+    average = sum(listofScores) / length(listofScores)
+    percentage = calculatePercentage(listofScores, average)
+    print("Number of grades:" )
+    print("Average grade:")
+    print("Percentage of grades above average:")
+
+main()
+"""
