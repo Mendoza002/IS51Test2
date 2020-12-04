@@ -28,3 +28,29 @@ displayNumofgrades(lisofScores)
 
 main()
 """
+
+
+def main():
+    final_scores = extractField("Final.txt")
+    scores = [eval(num) for num in final_scores]
+    displayNumofgrades(scores)
+
+
+def extractFile(txt_file):
+    infile = open(txt_file, "r")
+    numbers = [num.rstrip() for num in infile]
+    infile.close()
+    return
+
+
+def displayNumofgrades(listofScores):
+    grades = len(listofScores)
+    average = sum(listofScores) / len(listofScores)
+    percentage = calculatePercentage(listofScores, average)
+    print("Number of grades: {0:,d} ".format(grades))
+    print("Average grade:{0:,.2f}".format(average))
+    print("Percentage of grades above average:{0:,.2f}".format(percentage))
+
+
+
+main()
